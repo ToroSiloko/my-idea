@@ -1,0 +1,21 @@
+class NFTMarketingPlan:
+    def __init__(self, name):
+        self.name = name
+        self.steps = [
+            "Define Your Brand and Story",
+            "Build a Strong Online Presence",
+            "Community Engagement & Growth",
+            "Strategic Partnerships & Collaborations",
+            "Launch & Sales Strategy",
+            "Post-Launch Growth & Sustainability",
+            "Performance Tracking & Optimization"
+        ]
+
+    def display_plan(self):
+        print(f"Marketing Plan for {self.name} NFT Collection:\n")
+        for i, step in enumerate(self.steps, start=1):
+            print(f"{i}. {step}")
+
+if __name__ == "__main__":
+    nft_plan = NFTMarketingPlan("MyNFT")
+    nft_plan.display_plan()
